@@ -9,7 +9,6 @@ function adicionarAmigo() {
   }
   limparCampo();
   percorrendoArrey();
-  sortearAmigo();
   console.log(amigos);
 }
 
@@ -34,7 +33,7 @@ function sortearAmigo() {
     const indiceSorteado = Math.floor(Math.random() * amigos.length);
     const sorteado = amigos[indiceSorteado];
     let lista = document.getElementById("listaAmigos");
-    lista.innerHTML = `${sorteado}`;
+    lista.innerHTML = `<span style="color: green;">Amigo secreto sorteado é: ${sorteado}</span>`;
   } else {
     alert("Ainda não foram adicionados os amigos");
   }
