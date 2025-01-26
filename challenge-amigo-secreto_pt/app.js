@@ -8,7 +8,7 @@ function adicionarAmigo() {
     amigos.push(nomes);
   }
   limparCampo();
-  percorrendoArrey();
+  percorrendoArray();
   console.log(amigos);
 }
 
@@ -17,7 +17,7 @@ function limparCampo() {
   campo.value = "";
 }
 
-function percorrendoArrey() {
+function percorrendoArray() {
   let lista = document.getElementById("listaAmigos");
   lista.innerHTML = "";
 
